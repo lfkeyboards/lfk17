@@ -371,28 +371,6 @@ def add_controller():
     nets["LED_SDA"] += parts["U1"]["SDA/"]
     nets["LED_SDA"] += parts["U2"]["SDA"]
 
-    # # USB Connector
-    # parts["P2"] = Part('/Users/swilson/dev/kicad-library/library/conn.lib', 'CONN_01X05', ref="P2", footprint='Connectors_JST:JST_SH_SM05B-SRSS-TB_05x1.00mm_Angled')
-    # nets["VBUS"] += parts["P2"][5]
-    # nets["USB-"] += parts["P2"][4]
-    # nets["USB+"] += parts["P2"][3]
-    # nets["GND"] += parts["P2"][1]
-
-    # ISP Connector
-    parts["P3"] = Part('/Users/swilson/dev/kicad-library/library/conn.lib', 'CONN_02X03', ref="P3", footprint='Connectors_JST:JST_SH_SM06B-SRSS-TB_06x1.00mm_Angled')
-    nets["+5v"] += parts["P3"][2]
-    nets["GND"] += parts["P3"][6]
-    nets["RESET"] += parts["P3"][5]
-    parts["P3"][1] += parts["U1"]["MISO"]
-    parts["P3"][3] += parts["U1"]["SCLK"]
-    parts["P3"][4] += parts["U1"]["MOSI"]
-
-    # # USB Connector
-    # parts["P4"] = Part('/Users/swilson/dev/kicad-library/library/conn.lib', 'CONN_01X03', ref="P4", footprint='Connectors_JST:JST_SH_SM03B-SRSS-TB_03x1.00mm_Angled')
-    # nets["+5v"] += parts["P4"][2]
-    # nets["GND"] += parts["P4"][1]
-    # parts["P4"][3] += parts["U1"]["PC6"]
-
     # ISSI
     parts["U2"]["SDB"] += parts["R6"][2]
     parts["U2"]["R_EXT"] += parts["R7"][2]
