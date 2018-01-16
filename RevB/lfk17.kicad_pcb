@@ -3,7 +3,7 @@
   (general
     (links 272)
     (no_connects 0)
-    (area 31.898709 28.607279 129.135 135.200001)
+    (area 36.119999 29.769999 110.565001 129.615001)
     (thickness 1.6)
     (drawings 20)
     (tracks 1516)
@@ -92,7 +92,7 @@
       (mirror false)
       (drillshape 0)
       (scaleselection 1)
-      (outputdirectory lfk17-gerbers-revb/))
+      (outputdirectory gerbers/))
   )
 
   (net 0 "")
